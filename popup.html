@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>API Key Organizer</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="titlebar">
+        <h3>API Key Organizer</h3>
+        <div class="title-actions">
+          <button class="btn secondary sm" id="openSidePanel">侧栏</button>
+          <div class="muted">快捷键 <span class="kbd">Alt+Shift+K</span> 打开窗口</div>
+        </div>
+      </div>
+      <div class="toolbar">
+        <input id="search" type="text" placeholder="搜索: 名称/分类/备注/值" />
+        <select id="sortMode">
+          <option value="name">按名称</option>
+          <option value="category">按分类</option>
+          <option value="useCount">按使用频率</option>
+          <option value="lastUsedAt">按最近使用</option>
+          <option value="createdAt">按创建时间</option>
+          <option value="custom">自定义拖拽顺序</option>
+        </select>
+        <select id="sortAsc">
+          <option value="true">升序</option>
+          <option value="false">降序</option>
+        </select>
+        <button class="btn" id="add">新增</button>
+        <button class="btn secondary" id="export">导出</button>
+        <label class="btn secondary" for="importFile">导入</label>
+        <input class="hidden" type="file" id="importFile" accept="application/json" />
+      </div>
+      <div id="list" class="list"></div>
+    </div>
+    <script type="module" src="shared.js"></script>
+    <script type="module" src="ui.js"></script>
+  </body>
+  </html>
+
+

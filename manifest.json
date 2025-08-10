@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "API Key Organizer",
+  "description": "快速管理与复制 API Key：添加、删除、拖拽排序、按名称/使用频率/分类排序、搜索、备注、侧边栏/弹出窗、快捷键。",
+  "version": "0.1.0",
+  "action": {
+    "default_title": "API Key Organizer",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html",
+  "permissions": [
+    "storage",
+    "sidePanel",
+    "commands",
+    "clipboardWrite",
+    "windows"
+  ],
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "commands": {
+    "toggle-side-panel": {
+      "suggested_key": {
+        "default": "Alt+Shift+K",
+        "windows": "Alt+Shift+K"
+      },
+      "description": "打开独立窗口"
+    }
+  }
+}
+
