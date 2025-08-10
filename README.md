@@ -25,12 +25,7 @@
 
 ## 📦 安装方式
 
-### 方式1: Chrome Web Store (推荐)
-1. 访问 [Chrome Web Store](链接待添加)
-2. 点击"添加至Chrome"
-3. 确认安装
-
-### 方式2: 开发者模式安装
+### 开发者模式安装
 1. 下载或克隆此项目
 2. 打开Chrome，进入 `chrome://extensions/`
 3. 开启"开发者模式"
@@ -103,9 +98,8 @@
 
 ## 📞 联系方式
 
-- 项目主页: [GitHub Repository](链接待添加)
-- 问题反馈: [Issues](链接待添加)
-- 功能建议: [Discussions](链接待添加)
+- 项目主页: [GitHub Repository](https://github.com/MizukiSheena/API-Key-Organizer-Chrome-Extension)
+- 问题反馈: [Issues](https://github.com/MizukiSheena/API-Key-Organizer-Chrome-Extension/issues))
 
 ---
 
